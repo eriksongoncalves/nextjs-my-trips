@@ -4,6 +4,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
+    '!src/graphql/**/*.ts',
     '!src/styles/**/*.ts(x)?',
     '!src/pages/_*.ts(x)?',
     '!src/types/*',
