@@ -1,5 +1,11 @@
-import Main from 'components/Main';
+import dynamic from 'next/dynamic';
 
-export default function Home() {
-  return <Main />;
+const Map = dynamic(() => import('components/Map'), {
+  ssr: false
+});
+
+function Home() {
+  return <Map />;
 }
+
+export default Home;
